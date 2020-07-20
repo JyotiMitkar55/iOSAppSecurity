@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="hR5-bR-7ou">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="NFe-CT-E5P">
+            <objects>
+                <navigationController id="hR5-bR-7ou" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="gzc-eE-Z7N">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="aKR-YD-p73"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5l4-0h-A51" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-652" y="117"/>
+        </scene>
+        <!--App SecurityVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="AppSecurityVC" id="BYZ-38-t0r" customClass="AppSecurityVC" customModule="AppSecurity" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4R5-G6-kGP"/>
+                        <viewControllerLayoutGuide type="bottom" id="R3a-DJ-3GJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6Zx-74-7Vd">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w3c-ce-a2f">
+                                        <rect key="frame" x="16" y="16" width="343" height="40"/>
+                                        <color key="backgroundColor" red="0.52156862749999999" green="0.7725490196" blue="0.41960784309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="RJw-9W-6Xj"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" title="Jail Break Detection">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="jailBreakDetectionButtonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YGS-aU-e1b"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zsz-MK-cMM">
+                                        <rect key="frame" x="16" y="66" width="343" height="40"/>
+                                        <color key="backgroundColor" red="0.52156862749999999" green="0.7725490196" blue="0.41960784309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="Oa1-lp-G0Z"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" title="Hooking Detection">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="hookingDetectionButtonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ehm-W2-lKj"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9SD-pw-qjO">
+                                        <rect key="frame" x="16" y="116" width="343" height="40"/>
+                                        <color key="backgroundColor" red="0.52156862749999999" green="0.7725490196" blue="0.41960784309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="eYl-MJ-LBA"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" title="Stong Random Number Generator">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="strongRandomNumberGenerator:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Bpz-oM-fge"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FGd-im-qSR">
+                                        <rect key="frame" x="16" y="166" width="343" height="40"/>
+                                        <color key="backgroundColor" red="0.52156862749999999" green="0.7725490196" blue="0.41960784309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="PCh-qs-4bI"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" title="Cryptography">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="cryptographyButtonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PZE-PG-BVy"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m4T-Vk-DLE" userLabel="HashValueGenerator">
+                                        <rect key="frame" x="16" y="216" width="343" height="40"/>
+                                        <color key="backgroundColor" red="0.52156862749999999" green="0.7725490196" blue="0.41960784309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="CO2-uD-V6X"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" title="Hash Value Generator">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="hashValueGenerator:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ukg-Ue-oUM"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="w3c-ce-a2f" secondAttribute="trailing" constant="16" id="7Ve-QB-pAo"/>
+                                    <constraint firstItem="w3c-ce-a2f" firstAttribute="leading" secondItem="6Zx-74-7Vd" secondAttribute="leading" constant="16" id="Irv-LP-cct"/>
+                                    <constraint firstItem="m4T-Vk-DLE" firstAttribute="leading" secondItem="6Zx-74-7Vd" secondAttribute="leading" constant="16" id="ST7-rh-ao9"/>
+                                    <constraint firstItem="zsz-MK-cMM" firstAttribute="top" secondItem="w3c-ce-a2f" secondAttribute="bottom" constant="10" id="UTc-pa-T3K"/>
+                                    <constraint firstAttribute="trailing" secondItem="m4T-Vk-DLE" secondAttribute="trailing" constant="16" id="UVZ-j0-8fF"/>
+                                    <constraint firstAttribute="trailing" secondItem="zsz-MK-cMM" secondAttribute="trailing" constant="16" id="VwO-QC-Zp8"/>
+                                    <constraint firstAttribute="trailing" secondItem="9SD-pw-qjO" secondAttribute="trailing" constant="16" id="Xcr-Tu-owA"/>
+                                    <constraint firstItem="m4T-Vk-DLE" firstAttribute="top" secondItem="FGd-im-qSR" secondAttribute="bottom" constant="10" id="eAr-6T-KIV"/>
+                                    <constraint firstItem="w3c-ce-a2f" firstAttribute="centerX" secondItem="6Zx-74-7Vd" secondAttribute="centerX" id="h7R-mr-eZx"/>
+                                    <constraint firstItem="9SD-pw-qjO" firstAttribute="leading" secondItem="6Zx-74-7Vd" secondAttribute="leading" constant="16" id="l5u-ul-1f7"/>
+                                    <constraint firstItem="FGd-im-qSR" firstAttribute="leading" secondItem="6Zx-74-7Vd" secondAttribute="leading" constant="16" id="nhF-Yj-159"/>
+                                    <constraint firstAttribute="trailing" secondItem="FGd-im-qSR" secondAttribute="trailing" constant="16" id="vCl-BJ-Plv"/>
+                                    <constraint firstItem="zsz-MK-cMM" firstAttribute="leading" secondItem="6Zx-74-7Vd" secondAttribute="leading" constant="16" id="wCt-xi-5TC"/>
+                                    <constraint firstItem="9SD-pw-qjO" firstAttribute="top" secondItem="zsz-MK-cMM" secondAttribute="bottom" constant="10" id="wYG-cf-GYC"/>
+                                    <constraint firstItem="w3c-ce-a2f" firstAttribute="top" secondItem="6Zx-74-7Vd" secondAttribute="top" constant="16" id="xET-sm-Nt8"/>
+                                    <constraint firstItem="FGd-im-qSR" firstAttribute="top" secondItem="9SD-pw-qjO" secondAttribute="bottom" constant="10" id="yJD-Ee-feH"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="6Zx-74-7Vd" secondAttribute="trailing" id="Abh-7P-wfo"/>
+                            <constraint firstItem="R3a-DJ-3GJ" firstAttribute="top" secondItem="6Zx-74-7Vd" secondAttribute="bottom" id="GSO-vr-sYp"/>
+                            <constraint firstItem="6Zx-74-7Vd" firstAttribute="top" secondItem="4R5-G6-kGP" secondAttribute="bottom" id="RvV-Ao-lgP"/>
+                            <constraint firstItem="6Zx-74-7Vd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="uwg-UC-wps"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="7bG-CQ-oOT"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="97" y="117"/>
+        </scene>
+        <!--CryptographyVC-->
+        <scene sceneID="56N-YI-nSE">
+            <objects>
+                <viewController storyboardIdentifier="CryptographyVC" id="nHB-qe-Zo8" customClass="CryptographyVC" customModule="AppSecurity" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="eXp-QW-HfV"/>
+                        <viewControllerLayoutGuide type="bottom" id="P2B-EK-uzR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="aPX-a1-mlO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hzt-Ot-BV0">
+                                <rect key="frame" x="16" y="16" width="343" height="40"/>
+                                <color key="backgroundColor" red="0.52156862749999999" green="0.7725490196" blue="0.41960784309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Qg4-rX-oWy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Encrypt Message with AES">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="encryptMessageWithAES:" destination="nHB-qe-Zo8" eventType="touchUpInside" id="18I-Jd-a7S"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y1G-qT-OQB">
+                                <rect key="frame" x="16" y="66" width="343" height="40"/>
+                                <color key="backgroundColor" red="0.52156862749999999" green="0.7725490196" blue="0.41960784309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="aMR-af-7HM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Decrypt Message with AES">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="decryptMessageWithAES:" destination="nHB-qe-Zo8" eventType="touchUpInside" id="Tza-Ah-D7w"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gga-Zu-vLa">
+                                <rect key="frame" x="16" y="116" width="343" height="40"/>
+                                <color key="backgroundColor" red="0.52156862749999999" green="0.7725490196" blue="0.41960784309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="YiS-RY-lgP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Encrypt Message with RSA">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="encryptMessageWithRSA:" destination="nHB-qe-Zo8" eventType="touchUpInside" id="Bpl-If-lQZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VDt-qe-oCc">
+                                <rect key="frame" x="16" y="166" width="343" height="40"/>
+                                <color key="backgroundColor" red="0.52156862749999999" green="0.7725490196" blue="0.41960784309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="WI4-uU-mDe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Decrypt Message with RSA">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="decryptMessageWithRSA:" destination="nHB-qe-Zo8" eventType="touchUpInside" id="xvx-nO-jC9"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="VDt-qe-oCc" firstAttribute="leading" secondItem="aPX-a1-mlO" secondAttribute="leading" constant="16" id="1fM-tO-pMj"/>
+                            <constraint firstItem="hzt-Ot-BV0" firstAttribute="top" secondItem="eXp-QW-HfV" secondAttribute="bottom" constant="16" id="OtH-NW-4Le"/>
+                            <constraint firstAttribute="trailing" secondItem="y1G-qT-OQB" secondAttribute="trailing" constant="16" id="jYH-SN-ZRl"/>
+                            <constraint firstItem="y1G-qT-OQB" firstAttribute="top" secondItem="hzt-Ot-BV0" secondAttribute="bottom" constant="10" id="kSK-7o-oYj"/>
+                            <constraint firstItem="VDt-qe-oCc" firstAttribute="top" secondItem="gga-Zu-vLa" secondAttribute="bottom" constant="10" id="lJp-QA-Evt"/>
+                            <constraint firstAttribute="trailing" secondItem="gga-Zu-vLa" secondAttribute="trailing" constant="16" id="lR1-cu-atd"/>
+                            <constraint firstItem="y1G-qT-OQB" firstAttribute="leading" secondItem="aPX-a1-mlO" secondAttribute="leading" constant="16" id="oKb-XQ-dYu"/>
+                            <constraint firstItem="gga-Zu-vLa" firstAttribute="top" secondItem="y1G-qT-OQB" secondAttribute="bottom" constant="10" id="on0-TJ-MIb"/>
+                            <constraint firstItem="hzt-Ot-BV0" firstAttribute="leading" secondItem="aPX-a1-mlO" secondAttribute="leading" constant="16" id="qHK-GC-JlW"/>
+                            <constraint firstItem="gga-Zu-vLa" firstAttribute="leading" secondItem="aPX-a1-mlO" secondAttribute="leading" constant="16" id="rtQ-ZK-T4d"/>
+                            <constraint firstAttribute="trailing" secondItem="hzt-Ot-BV0" secondAttribute="trailing" constant="16" id="s3Y-hD-d7h"/>
+                            <constraint firstAttribute="trailing" secondItem="VDt-qe-oCc" secondAttribute="trailing" constant="16" id="wmp-NM-45H"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b93-9C-Woe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="766" y="118"/>
+        </scene>
+    </scenes>
+</document>
